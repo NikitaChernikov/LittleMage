@@ -21,4 +21,9 @@ public class PlayerAnimations : MonoBehaviour
     {
         anim.SetFloat("Attack", value);
     }
+
+    public void Die()
+    {
+        anim.SetTrigger("Die");
+    }
 }
