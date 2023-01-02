@@ -4,7 +4,6 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Joystick _joystick;
     [SerializeField] private float _movementSpeed = 5;
-    [SerializeField] private float _rotationSpeed = 360;
 
     private Rigidbody _rigidbody;
     private Vector3 _moveDirection;

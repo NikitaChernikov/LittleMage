@@ -9629,7 +9629,7 @@ MonoBehaviour:
   ProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectileCollisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 2147483647
   ProjectileDestroyParticleSystemsOnCollision:
   - {fileID: 1881526682339384934}
   - {fileID: 1881526684240151456}
@@ -14660,7 +14660,7 @@ MonoBehaviour:
   ProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectileCollisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 2147483647
   ProjectileDestroyParticleSystemsOnCollision:
   - {fileID: 1881526684179738835}
   - {fileID: 1881526682630078534}
@@ -14887,7 +14887,7 @@ MonoBehaviour:
   ProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectileCollisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 2147483647
   ProjectileDestroyParticleSystemsOnCollision:
   - {fileID: 1881526683594833447}
   - {fileID: 1881526683594884143}

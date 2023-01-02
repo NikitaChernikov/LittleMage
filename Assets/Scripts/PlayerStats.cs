@@ -23,6 +23,22 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void AddHealth()
+    {
+        if (_health >= 91) _health = 100;
+        else _health += 10;
+    }
+
+    public void AddArmour()
+    {
+        _armour *= 1.5f;
+    }
+
+    public void AddGold(int count)
+    {
+        _gold += count;
+    }
+
     public int GetGold()
     {
         return _gold;
@@ -31,6 +47,11 @@ public class PlayerStats : MonoBehaviour
     public float GetDamage()
     {
         return _damage;
+    }
+
+    public float GetHealth()
+    {
+        return _health;
     }
 
     private void Death()

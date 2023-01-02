@@ -13,7 +13,7 @@ public class PlayerAttacks : MonoBehaviour
 
     private IEnumerator CastAttackAnimation()
     {
-        while (true)
+        while (PlayerStats.stats.GetHealth() > 0)
         {
             yield return new WaitForSeconds(3);
             PlayerAnimations.animations.Attack(0.5f);
