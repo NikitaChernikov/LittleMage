@@ -14,6 +14,10 @@ public class Buffs : MonoBehaviour
                     Destroy(this.gameObject);
                     break;
                 case "HP":
+                    if (PlayerStats.stats.GetHealth() == 100)
+                    {
+                        return;
+                    }
                     PlayerStats.stats.AddHealth();
                     Destroy(this.gameObject);
                     break;

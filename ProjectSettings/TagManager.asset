@@ -8,6 +8,7 @@ TagManager:
   - Gold
   - HP
   - Armour
+  - Ogre
   layers:
   - Default
   - TransparentFX

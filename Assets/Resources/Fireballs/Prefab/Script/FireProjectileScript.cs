@@ -72,8 +72,9 @@ namespace DigitalRuby.PyroParticles
             {
                 // already collided, don't do anything
                 return;
+                
             }
-
+            
             // stop the projectile
             collided = true;
             Stop();

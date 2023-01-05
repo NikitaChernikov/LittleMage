@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 306616461018071776}
   - component: {fileID: 306616461018071775}
   - component: {fileID: 306616461018071774}
+  - component: {fileID: 5592667766025199533}
   m_Layer: 0
   m_Name: Buffs Chest
   m_TagString: Untagged
@@ -239,6 +240,22 @@ MonoBehaviour:
   _gold: {fileID: 3182414663123716373}
   _health: {fileID: 8100277742565026841}
   _armour: {fileID: 7392444280548047913}
+--- !u!208 &5592667766025199533
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2252273135454430004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.37800002, y: 0.23600002, z: 0.24400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.365, y: 0.23600002, z: 0.231}
+  m_TimeToStationary: 0.5
 --- !u!1 &2521354124179042846
 GameObject:
   m_ObjectHideFlags: 0

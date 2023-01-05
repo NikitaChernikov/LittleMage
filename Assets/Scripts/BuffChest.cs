@@ -7,11 +7,13 @@ public class BuffChest : MonoBehaviour
     [SerializeField] private GameObject _health;
     [SerializeField] private GameObject _armour;
 
-    private Animator anim;
+    private Animator _anim;
+    private bool isOpen = false;
+
 
     private void Awake()
     {
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
     }
 
     private void Start()
@@ -21,9 +23,10 @@ public class BuffChest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isOpen)
         {
-            anim.SetTrigger("Open");
+            isOpen = true;
+            _anim.SetTrigger("Open");
             Invoke("ChooseBuff", 1);
         }
     }
@@ -48,7 +51,7 @@ public class BuffChest : MonoBehaviour
     private IEnumerator DestroyChest()
     {
         yield return new WaitForSeconds(30);
-        anim.SetTrigger("Destroy");
+        _anim.SetTrigger("Destroy");
         yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
     }
